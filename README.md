@@ -82,6 +82,3 @@ EQ_PROJECT/
 * English language only
 * Not a clinical or medical assessment
 
-## 📄 License
-
-MIT License
