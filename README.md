@@ -62,10 +62,26 @@ EQ_PROJECT/
 └── README.md
 ```
 
+## 🖼 Sample Screenshots
+
+### Homepage
+
+<img width="100%" alt="Homepage" src="https://github.com/user-attachments/assets/79cb443c-e334-4f19-a0dd-e132c7ae1b2c" />
+
+### Questions Page
+
+<img width="100%" alt="Questions Page" src="https://github.com/user-attachments/assets/166bdc78-4cdf-4473-8f72-e25ca7b8e966" />
+
+### Results Page
+
+<img width="100%" alt="Results Page" src="https://github.com/user-attachments/assets/318de14a-41da-4b50-a83a-f10cc6d03f3f" />
+
 ## ⚠️ Notes
 
 * First run downloads the AI model (~250MB)
 * English language only
 * Not a clinical or medical assessment
 
-##
+## 📄 License
+
+MIT License
