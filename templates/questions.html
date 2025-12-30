@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQ Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .scenario-box { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .question-card {
+            border-left: 4px solid #667eea;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="scenario-box">
+                <h4 class="mb-3">📋 Scenario</h4>
+                <p class="mb-0">{{ scenario }}</p>
+            </div>
+
+            <form method="post" action="/result">
+                {% for q in questions %}
+                <div class="card question-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Question {{ loop.index }}</h5>
+                        <p class="text-muted">{{ q }}</p>
+                        <textarea name="answer" class="form-control" rows="4" 
+                                  placeholder="Share your thoughts..." required></textarea>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <button class="btn btn-success btn-lg w-100" type="submit">
+                    Submit Responses
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
